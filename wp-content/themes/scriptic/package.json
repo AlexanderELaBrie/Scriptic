@@ -1,0 +1,27 @@
+{
+  "name": "scriptic",
+  "version": "0.0.1",
+  "description": "Package for the Scriptic site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexanderELaBrie/Scriptic.git"
+  },
+  "author": "Alexander LaBrie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexanderELaBrie/Scriptic/issues"
+  },
+  "homepage": "https://github.com/AlexanderELaBrie/Scriptic#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "node-sass": "^4.11.0"
+  }
+}

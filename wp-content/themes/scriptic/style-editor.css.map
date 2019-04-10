@@ -1,0 +1,1 @@
+{"version":3,"sources":["admin/blocks/_text.scss"],"names":[],"mappings":"AAAA;EAEQ,eAAe;EACf,WAAW,EAAA","file":"style-editor.css","sourcesContent":[".editor-styles-wrapper {\r\n    p {\r\n        font-size: 40px;\r\n        color: pink;\r\n    }\r\n}"]}

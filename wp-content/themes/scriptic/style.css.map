@@ -1,0 +1,1 @@
+{"version":3,"sources":["frontend/pages/_home.scss"],"names":[],"mappings":"AAAA;EACI,uBAAuB;EACvB,YAAY;EACZ,aAAa;EACb,sBAAsB,EAAA","file":"style.css","sourcesContent":["p {\r\n    border: 5px solid green;\r\n    margin: 15px;\r\n    display: flex;\r\n    flex-direction: column;\r\n}"]}
