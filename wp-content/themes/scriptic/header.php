@@ -23,7 +23,6 @@
 <div id="page" class="site">
 
 	<header id="masthead" class="site-header">
-		
 		<?php wp_nav_menu( array( 'theme_location' => 'header' ) ); ?>
 	</header><!-- #masthead -->
 

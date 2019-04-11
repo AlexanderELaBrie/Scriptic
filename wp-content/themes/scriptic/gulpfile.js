@@ -26,7 +26,6 @@ gulp.task('sass-admin', function () {
 });
  
 gulp.task('default', function () {
-	//gulp.watch('sass/**/**/*.scss');
 	gulp.watch('sass/frontend/**/*.scss', gulp.series('sass'));
 	gulp.watch('sass/admin/**/*.scss', gulp.series('sass-admin'));
 });
