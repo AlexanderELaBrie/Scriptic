@@ -22,8 +22,10 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 
-	<header id="masthead" class="site-header">
-		<?php wp_nav_menu( array( 'theme_location' => 'header' ) ); ?>
-	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
+	<header class="site-header">
+		<div class="site-header__logo">
+		</div>
+		<div class="site-header__menu">
+			<?php wp_nav_menu( array( 'theme_location' => 'header' ) ); ?>
+		</div>
+	</header><!-- .site-header -->

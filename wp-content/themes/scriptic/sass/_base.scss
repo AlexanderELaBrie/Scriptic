@@ -1,0 +1,77 @@
+// Import Google fonts.
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Lovers+Quarrel');
+
+// Variables.
+$color-primary:         #d8b886;
+$color-primary-light:   #E4CEAC;
+$color-primary-dark:    #6E5123;
+$color-primary-dark-2:  #342610;
+$color-primary-dark-3:  #471500;
+$color-primary-dark-4:  #300900;
+$color-primary-dark-5:  #91472e;
+
+$color-secondary:       #174F41;
+$color-secondary-light: #00FFBF;
+
+$color-background:      #F7F0E6;
+
+$color-white:           #FDFBF9;
+$color-grey:            #B0AFAE;
+$color-black:           #21180A;
+
+$font-family-primary: 'Quattrocento Sans', sans-serif;
+$font-family-title: 'Lovers Quarrel', cursive;
+
+// Margins and padding should be specified individually for each element.
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5% // 1rem = 10px, 10px/16px = 62.5%
+}
+
+body {
+    font-family: $font-family-primary;
+}
+
+h1 {
+    font-size: 16rem;
+}
+
+a,
+a:visited {
+    color: $color-primary-dark-2;;
+    text-decoration: none;
+    transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1) all;
+
+    &:hover {
+        color: $color-primary;
+    }
+}
+
+p {
+    font-size: 1.5rem;
+    color: $color-white;
+
+    &:not(:last-child) {
+        margin-bottom: .8rem;
+    }
+}
+
+#page {
+    background-position: center;
+    background-size: cover;
+    background-image: url(assets/BG-Parchment.jpg);
+    background-repeat: no-repeat;
+    padding-bottom: 10rem;
+}
+
+#content {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+}

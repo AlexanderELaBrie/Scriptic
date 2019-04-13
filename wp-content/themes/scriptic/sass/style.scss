@@ -1,2 +1,6 @@
+@import 'base';
+@import 'mixins';
+
 @import 'frontend/normalize';
+@import 'frontend/elements/header';
 @import 'frontend/pages/__pages';

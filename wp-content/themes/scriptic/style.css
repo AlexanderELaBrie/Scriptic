@@ -1,3 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lovers+Quarrel");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Quattrocento Sans", sans-serif; }
+
+h1 {
+  font-size: 16rem; }
+
+a,
+a:visited {
+  color: #342610;
+  text-decoration: none;
+  transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1) all; }
+  a:hover,
+  a:visited:hover {
+    color: #d8b886; }
+
+p {
+  font-size: 1.5rem;
+  color: #FDFBF9; }
+  p:not(:last-child) {
+    margin-bottom: .8rem; }
+
+#page {
+  background-position: center;
+  background-size: cover;
+  background-image: url(assets/BG-Parchment.jpg);
+  background-repeat: no-repeat;
+  padding-bottom: 10rem; }
+
+#content {
+  width: 90%;
+  max-width: 120rem;
+  margin: 0 auto; }
+
+/* If we add the border using a regular CSS border, it won't look good on non-retina devices,
+ * since its edges can look jagged due to lack of antialiasing. In this case, we are several
+ * layers of box-shadow to add the border visually, which will render the border smoother. */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -24,14 +70,6 @@ body {
    */
 main {
   display: block; }
-
-/**
-   * Correct the font size and margin on `h1` elements within `section` and
-   * `article` contexts in Chrome, Firefox, and Safari.
-   */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
 
 /* Grouping content
      ========================================================================== */
@@ -304,10 +342,50 @@ template {
 [hidden] {
   display: none; }
 
-p {
-  border: 5px solid green;
-  margin: 15px;
+.site-header {
+  position: absolute;
+  height: 7rem;
+  width: 100%;
+  background-color: rgba(48, 9, 0, 0.8);
   display: flex;
-  flex-direction: column; }
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10; }
+  .site-header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .site-header li {
+    font-size: 3rem;
+    font-weight: 400;
+    list-style: none;
+    margin-right: 2rem; }
+  .site-header a {
+    color: #FDFBF9; }
+
+.hero-homepage {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  z-index: 0; }
+  .hero-homepage__title {
+    position: absolute;
+    align-self: center;
+    font-family: "Lovers Quarrel", cursive;
+    font-weight: unset;
+    color: #471500;
+    z-index: 2;
+    background: transparent; }
+  .hero-homepage__background {
+    background: transparent; }
+
+.homepage__section {
+  padding: 2.5rem;
+  background: rgba(48, 9, 0, 0.8);
+  border: 0.1rem solid #91472e;
+  border-radius: 1rem;
+  box-shadow: .2rem .2rem .8rem; }
 
 /*# sourceMappingURL=style.css.map */
