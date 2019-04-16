@@ -3,7 +3,7 @@
  * layers of box-shadow to add the border visually, which will render the border smoother. */
 
  @mixin box-shadow() {
-    box-shadow: .2rem .2rem .8rem;
+    box-shadow: 2px 2px 8px;
     //0 0 0 $size $color-black inset,         	    // Original border.
     //0 0 0 ($size + .1rem) $color-black inset, 	// Antialiasing, inner edge.
     //0 0 .1rem 0 rgba( $color-black, 0.1 );  	    // Antialiasing, outer edge.

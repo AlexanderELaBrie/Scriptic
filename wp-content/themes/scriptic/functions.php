@@ -26,11 +26,11 @@ if ( ! function_exists( 'scriptic_setup' ) ) :
         */
         load_theme_textdomain('scriptic_translate', get_template_directory() . '/languages');
 
-        // Add support for editor styles.
-        add_theme_support( 'editor-styles' );
-
         // Add support for Block Styles.
 		add_theme_support( 'wp-block-styles' );
+
+        // Add support for editor styles.
+        add_theme_support( 'editor-styles' );
 
         // Registers an editor stylesheet for the theme.
         add_editor_style( 'style-editor.css' );

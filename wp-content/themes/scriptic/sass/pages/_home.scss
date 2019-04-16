@@ -1,0 +1,45 @@
+.hero-homepage {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    z-index: 0;
+
+    &__text {
+        align-self: center;
+
+        &--title {
+            align-self: center;
+            text-align: center;
+            font-family: $font-family-title;
+            font-weight: unset;
+            color: $color-primary-dark-3;
+            z-index: 2;
+        }
+    
+        &--tagline {
+            align-self: center;
+            text-align: center;
+            font-family: $font-family-primary;
+            font-size: 3rem;
+            font-weight: unset;
+            color: $color-primary-dark-3;
+            opacity: 0;
+            transition: opacity 1200ms cubic-bezier(.36, .76, .72, 1.00);
+
+            &.fade-in {
+                opacity: 1;
+            }
+        }
+
+    }
+ 
+}
+
+.homepage__section {
+    padding: 2.5rem;
+    background: rgba( $color-primary-dark-4, .8 );
+    border: .1rem solid rgba( $color-primary-dark-5, 1 );
+    border-radius: 1rem;
+    @include box-shadow();
+}

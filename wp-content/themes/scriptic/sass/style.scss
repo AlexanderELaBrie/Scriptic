@@ -1,6 +1,6 @@
-@import 'base';
-@import 'mixins';
+@import 'core/base';
+@import 'core/mixins';
+@import 'core/normalize';
 
-@import 'frontend/normalize';
-@import 'frontend/elements/header';
-@import 'frontend/pages/__pages';
+@import 'elements/header';
+@import 'pages/__pages';

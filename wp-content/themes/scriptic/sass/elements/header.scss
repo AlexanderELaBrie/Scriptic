@@ -1,7 +1,7 @@
 .site-header {
-    position: absolute;
+    position: fixed;
 
-    height: 7rem;
+    height: 5rem;
     width: 100%;
 
     background-color: rgba( $color-primary-dark-4, .8 );
@@ -9,7 +9,13 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    opacity: 0;
+    transition: opacity 1200ms cubic-bezier(.36, .76, .72, 1.00);
     z-index: 10;
+
+    &.fade-in {
+        opacity: 1;
+    }
 
     ul {
         display: flex;

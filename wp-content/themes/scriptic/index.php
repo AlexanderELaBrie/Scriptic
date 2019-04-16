@@ -18,7 +18,7 @@ get_header();
 ?>
 
 	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
+		<main id="content" class="site-content">
 
 		<?php
 		if ( have_posts() ) {
@@ -38,7 +38,7 @@ get_header();
 		}
 		?>
 
-		</main><!-- .site-main -->
+		</main><!-- .content -->
 	</section><!-- .content-area -->
 
 <?php
