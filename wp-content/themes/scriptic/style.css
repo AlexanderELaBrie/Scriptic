@@ -353,7 +353,7 @@ template {
 
 .site-header {
   position: fixed;
-  height: 5rem;
+  height: 7rem;
   width: 100%;
   background-color: rgba(48, 9, 0, 0.8);
   display: flex;
@@ -376,6 +376,12 @@ template {
     margin-right: 2rem; }
   .site-header a {
     color: #FDFBF9; }
+  .site-header__logo {
+    margin: 0 2%;
+    height: 80%;
+    width: 15rem;
+    background-position: center;
+    background-size: cover; }
 
 .hero-homepage {
   height: 100vh;

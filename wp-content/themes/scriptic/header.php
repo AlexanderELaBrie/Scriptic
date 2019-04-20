@@ -9,13 +9,16 @@
  * @package scriptic
  * @since 0.0.1
  */
+
+	$logo = get_field('site_logo', 'options');
 ?>
+
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="profile" href="https://gmpg.org/xfn/11" />
+	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/favicon.ico" />
 	<?php wp_enqueue_script("jquery"); ?>
 	<?php wp_head(); ?>
 </head>
@@ -24,7 +27,7 @@
 <div id="page" class="site">
 
 	<header id="site-header" class="site-header">
-		<div class="site-header__logo">
+		<div class="site-header__logo" <?php if($logo): ?> style="background-image: url('<?php echo $logo; ?>')" alt="Scriptic site logo."<?php endif; ?> >
 		</div>
 		<div class="site-header__menu">
 			<?php wp_nav_menu( array( 'theme_location' => 'header' ) ); ?>

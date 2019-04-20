@@ -1,7 +1,7 @@
 .site-header {
     position: fixed;
 
-    height: 5rem;
+    height: 7rem;
     width: 100%;
 
     background-color: rgba( $color-primary-dark-4, .8 );
@@ -32,5 +32,13 @@
 
     a {
         color: $color-white;
+    }
+
+    &__logo {
+        margin: 0 2%;
+        height: 80%;
+        width: 15rem;
+        background-position: center;
+        background-size: cover;
     }
 }

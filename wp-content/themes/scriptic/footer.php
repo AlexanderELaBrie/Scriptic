@@ -14,8 +14,9 @@
 
 	</div><!-- #page -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
+	<footer id="site-footer" class="site-footer">
+	
+		<div class="site-footer__site-info">
 			<?php $blog_info = get_bloginfo( 'name' ); ?>
 			<?php if ( ! empty( $blog_info ) ) : ?>
 				<a class="site-name" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
@@ -34,6 +35,12 @@
 				</nav><!-- .footer-navigation -->
 			<?php endif; ?>
 		</div><!-- .site-info -->
+
+		<div class="site-footer__credits">
+			<div class="site-footer__credits--favicon">
+				Favicon made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+			</div>
+		</div>
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->
