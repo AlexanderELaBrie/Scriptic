@@ -24,11 +24,9 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
 
 	<header id="site-header" class="site-header">
-		<div class="site-header__logo" <?php if($logo): ?> style="background-image: url('<?php echo $logo; ?>')" alt="Scriptic site logo."<?php endif; ?> >
-		</div>
+		<a class="site-header__logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" <?php if($logo): ?> style="background-image: url('<?php echo $logo; ?>')" alt="Scriptic site logo."><?php else: ?>><?php bloginfo( 'name' ); endif; ?></a>
 		<div class="site-header__menu">
 			<?php wp_nav_menu( array( 'theme_location' => 'header' ) ); ?>
 		</div>

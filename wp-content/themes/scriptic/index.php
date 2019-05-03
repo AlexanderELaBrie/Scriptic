@@ -17,8 +17,9 @@ get_header();
 
 ?>
 
-	<section id="primary" class="content-area">
-		<main id="content" class="site-content">
+	<main id="content" class="site-content">
+
+		<div class="container">
 
 		<?php
 		if ( have_posts() ) {
@@ -37,9 +38,10 @@ get_header();
 
 		}
 		?>
+		
+		</div><!-- .container -->
 
-		</main><!-- .content -->
-	</section><!-- .content-area -->
+	</main><!-- .content -->
 
 <?php
 

@@ -30,13 +30,16 @@ a:visited {
   transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1) all; }
   a:hover,
   a:visited:hover {
-    color: #d8b886; }
+    color: #c2cad1; }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  line-height: 1.75;
   color: #FDFBF9; }
   p:not(:last-child) {
     margin-bottom: .8rem; }
+  p.editor-rich-text__tinymce {
+    background-color: #471500; }
 
 #page {
   background-position: center;
@@ -45,7 +48,7 @@ p {
   background-repeat: no-repeat;
   padding-bottom: 10rem; }
 
-#content {
+.container {
   width: 90%;
   max-width: 120rem;
   margin: 0 auto; }
@@ -355,7 +358,7 @@ template {
   position: fixed;
   height: 7rem;
   width: 100%;
-  background-color: rgba(48, 9, 0, 0.8);
+  background-color: #471500;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -376,29 +379,34 @@ template {
     margin-right: 2rem; }
   .site-header a {
     color: #FDFBF9; }
+    .site-header a.site-header__logo {
+      color: #fff; }
   .site-header__logo {
     margin: 0 2%;
     height: 80%;
     width: 15rem;
     background-position: center;
-    background-size: cover; }
+    background-size: cover;
+    line-height: 5.6rem;
+    font-size: 5.6rem;
+    font-family: "Lovers Quarrel", cursive; }
 
-.hero-homepage {
+body.home .hero-homepage {
   height: 100vh;
   display: flex;
   justify-content: center;
-  background: transparent;
-  z-index: 0; }
-  .hero-homepage__text {
+  z-index: 0;
+  background-color: #FDFBF9; }
+  body.home .hero-homepage__text {
     align-self: center; }
-    .hero-homepage__text--title {
+    body.home .hero-homepage__text--title {
       align-self: center;
       text-align: center;
       font-family: "Lovers Quarrel", cursive;
       font-weight: unset;
       color: #471500;
       z-index: 2; }
-    .hero-homepage__text--tagline {
+    body.home .hero-homepage__text--tagline {
       align-self: center;
       text-align: center;
       font-family: "Quattrocento Sans", sans-serif;
@@ -407,14 +415,68 @@ template {
       color: #471500;
       opacity: 0;
       transition: opacity 1200ms cubic-bezier(0.36, 0.76, 0.72, 1); }
-      .hero-homepage__text--tagline.fade-in {
+      body.home .hero-homepage__text--tagline.fade-in {
         opacity: 1; }
 
-.homepage__section {
-  padding: 2.5rem;
-  background: rgba(48, 9, 0, 0.8);
-  border: 0.1rem solid #91472e;
-  border-radius: 1rem;
-  box-shadow: 2px 2px 8px; }
+body.home .intro {
+  position: relative;
+  overflow: hidden; }
+  body.home .intro__video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(79, 112, 165, 0.4);
+    display: flex;
+    justify-content: center; }
+    body.home .intro__video-overlay--text {
+      color: #FDFBF9;
+      font-size: 4rem;
+      max-width: 50%;
+      word-break: break-word;
+      text-align: center;
+      margin: auto 0; }
+  body.home .intro__video {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: calc(100vh - 7rem);
+    width: 100%; }
+
+body.home .project {
+  display: flex;
+  height: calc(50vh - 3.5rem);
+  min-height: calc(50vh - 3.5rem); }
+  body.home .project.odd {
+    background: #FDFBF9; }
+  body.home .project.even {
+    background: #c2cad1; }
+  body.home .project .container {
+    display: flex; }
+    body.home .project .container.odd {
+      flex-direction: row;
+      color: #174F41; }
+    body.home .project .container.even {
+      flex-direction: row-reverse;
+      color: #FDFBF9; }
+  body.home .project__image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: calc(50vh - 3.5rem);
+    width: 50%;
+    -webkit-mask-image: linear-gradient(to left, black, rgba(0, 0, 0, 0));
+            mask-image: linear-gradient(to left, black, rgba(0, 0, 0, 0)); }
+  body.home .project__title {
+    color: inherit;
+    font-size: 5rem;
+    font-weight: 600; }
+    body.home .project__title.link {
+      transition: 250ms cubic-bezier(0.075, 0.82, 0.165, 1) all; }
+      body.home .project__title.link.odd:hover {
+        color: #c2cad1; }
+      body.home .project__title.link.even:hover {
+        color: #174F41; }
+  body.home .project__description {
+    color: inherit; }
 
 /*# sourceMappingURL=style.css.map */

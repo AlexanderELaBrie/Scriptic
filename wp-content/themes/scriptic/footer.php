@@ -2,7 +2,7 @@
 /**
  * The template for displaying the footer
  *
- * Contains the closing of the #content div and all content after.
+ * Contains the closing of the body tag.
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
@@ -12,8 +12,6 @@
 
 ?>
 
-	</div><!-- #page -->
-
 	<footer id="site-footer" class="site-footer">
 	
 		<div class="site-footer__site-info">
@@ -22,7 +20,7 @@
 				<a class="site-name" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 			<?php endif; ?>
 			<?php if ( has_nav_menu( 'footer' ) ) : ?>
-				<nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'twentynineteen' ); ?>">
+				<nav class="footer-navigation" aria-label="<?php esc_attr_e( 'Footer Menu', 'scriptic_translate' ); ?>">
 					<?php
 					wp_nav_menu(
 						array(
@@ -42,8 +40,6 @@
 			</div>
 		</div>
 	</footer><!-- #colophon -->
-
-</div><!-- #page -->
 
 <?php wp_footer(); ?>
 
