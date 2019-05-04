@@ -18,10 +18,10 @@
   "homepage": "https://github.com/AlexanderELaBrie/Scriptic#readme",
   "dependencies": {},
   "devDependencies": {
-    "gulp": "^4.0.0",
-    "gulp-autoprefixer": "^6.0.0",
+    "gulp": "^4.0.1",
+    "gulp-autoprefixer": "^6.1.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
-    "node-sass": "^4.11.0"
+    "node-sass": "^4.12.0"
   }
 }

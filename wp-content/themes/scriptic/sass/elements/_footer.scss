@@ -1,0 +1,8 @@
+.site-footer {
+    background-color: rgba( $color-tertiary-dark, 1 );
+    min-height: 15rem;
+
+    &__social-media {
+        background-color: rgba( $color-tertiary-dark-2, 1 );
+    }
+}

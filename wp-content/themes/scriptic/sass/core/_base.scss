@@ -16,6 +16,8 @@ $color-secondary-light: #00FFBF;
 
 $color-tertiary:        #4f70a5;
 $color-tertiary-light:  #6d9cba;
+$color-tertiary-dark:   #18334c;
+$color-tertiary-dark-2: #112538;
 
 $color-background:      #F7F0E6;
 
@@ -66,6 +68,7 @@ a:visited {
 
     &:hover {
         color: $color-grey-light;
+        cursor: pointer;
     }
 }
 

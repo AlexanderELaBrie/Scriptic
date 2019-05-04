@@ -5,6 +5,9 @@
  * @package Scriptic
  * @since 0.0.1
  */
+
+    $pre_footer_image = get_field('pre-footer_image');
+    $pre_footer_link = get_field('pre-footer_overlay_link');
 ?>
 
 <?php get_header(); ?>
@@ -34,30 +37,35 @@
             ?>
 
             <section class="project <?php if ($count % 2 == 0) : ?>even<?php else : ?>odd<?php endif; ?>">
-                <div class="container <?php if ($count % 2 == 0) : ?>even<?php else : ?>odd<?php endif; ?>">
-                    <?php if ( $image ) : ?>
-                        <img class="project__image <?php if ($count % 2 == 0) : ?>even<?php else : ?>odd<?php endif; ?>" src="<?php echo $image; ?>" alt="<?php echo esc_attr_e($title); ?>">
+                <div class="project__image-wrapper">
+                    <img class="project__image-wrapper--image" src="<?php echo $image; ?>" alt="<?php echo esc_attr_e($title); ?>">
+                </div>
+
+                <div class="project__content-wrapper">
+                    <?php if ($link) : ?>
+                        <a class="project__content-wrapper--title link" href=<?php echo $link; ?>><?php echo $title; ?></a>
+                    <?php else : ?>
+                        <h3 class="project__content-wrapper--title"><?php echo $title; ?></h3>
                     <?php endif; ?>
 
-                    <div class="content-wrapper">
-                        <?php if ($link) : ?>
-                            <a class="project__title link <?php if ($count % 2 == 0) : ?>even<?php else : ?>odd<?php endif; ?>" href=<?php echo $link; ?>><?php echo $title; ?></a>
-                        <?php else : ?>
-                            <h3 class="project__title <?php if ($count % 2 == 0) : ?>even<?php else : ?>odd<?php endif; ?>"><?php echo $title; ?></h3>
-                        <?php endif; ?>
-
-                        <p class="project__description"><?php echo $description; ?></p>
-                    </div>
-                    
+                    <p class="project__content-wrapper--description"><?php echo $description; ?></p>
                 </div>
             </section>
 
             <?php $count++; ?>
         <?php endwhile; ?>
     <?php endif; ?>
+
+    <section class="pre-footer">
+        <?php if ($pre_footer_image) : ?><img class="pre-footer__background-image" src="<?php echo $pre_footer_image; ?>"><?php endif; ?>
+        <div class="pre-footer__text-wrapper">
+            <p class="pre-footer__text-wrapper--overlay-text">Our services are available for contract-based work.</p>
+            <?php if ($pre_footer_link) : ?><a class="pre-footer__text-wrapper--overlay-text-link">Contact us here.</a><?php endif; ?>
+        </div>
+    </section>
     
 </main>
 
-<script type="text/javascript" src="<?php echo get_template_directory_uri() . '/js/main-menu-fadein.js'; ?>"></script>
-
 <?php get_footer(); ?>
+
+<script type="text/javascript" src="<?php echo get_template_directory_uri() . '/js/main-menu-fadein.js'; ?>"></script>

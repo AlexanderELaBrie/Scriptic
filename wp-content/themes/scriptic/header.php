@@ -1,8 +1,8 @@
 <?php
 /**
- * The header for our theme
+ * The header for the Scriptic theme.
  *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
+ * This is the template that displays all of the <head> section, as well as the site <header> and primary <nav> menu.
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
